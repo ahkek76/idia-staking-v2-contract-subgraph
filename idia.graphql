@@ -1,0 +1,28 @@
+type Staking @entity {
+  # tx hash
+  id: ID!
+
+  # Track
+  trackId: Int
+
+  # Staker
+  user: String!
+
+  # Amount of Tokens
+  amount: BigInt!
+}
+
+type Unstaking @entity {
+  # tx hash
+  id: ID!
+
+  # Track
+  trackId: Int
+
+  # Unstaker
+  user: String!
+
+  # Amount of Tokens
+  amount: BigInt!
+}
+
